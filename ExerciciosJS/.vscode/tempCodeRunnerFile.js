@@ -1,2 +1,2 @@
-]
-console.log(categorias)
+
+    case 3:
