@@ -7,7 +7,7 @@ if (finalYY !== '00' && (ano % 4) == 0){
     console.log(`O ano ${ano} é bissexto!`)
 }
 else{
-    console.log(`O ano ${ano} não é bissexto!`)
+    console.log(`O ano ${ano} não é bissexto! Teste`)
 }
 
     
