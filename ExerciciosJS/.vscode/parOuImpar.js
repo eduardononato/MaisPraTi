@@ -1,4 +1,4 @@
-let inputNumber = 314
+let inputNumber = 1
 
 if ((inputNumber % 2 ) === 0){
     console.log('Número PAR')
