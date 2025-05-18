@@ -8,4 +8,4 @@ for(contador; contador <= qntNumeros; contador++){
     soma += numInformado;
 }
 let media = soma / qntNumeros
-console.log(`A média aritmetica dos números informados é: ${media}`)
+console.log(`A média aritmetica dos números informados é: ${media}`)    
