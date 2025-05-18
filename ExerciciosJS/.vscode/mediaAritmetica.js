@@ -1,11 +1,13 @@
 const prompt = require('prompt-sync')();
-const qntNumeros = Number(prompt('Digite a quantidade de números desejados: '))
 let soma = 0
-contador = 1
+let contador = 0
+let numInformado = 0
 
-for(contador; contador <= qntNumeros; contador++){
-    let numInformado = Number(prompt(`Digite o número ${contador}: `))
-    soma += numInformado;
-}
-let media = soma / qntNumeros
-console.log(`A média aritmetica dos números informados é: ${media}`)    
+do {
+  numInformado = Number(prompt(`Digite um número e digite 0 para calcular a média dos número anteriores: `))
+  soma += numInformado;
+  contador++
+}while(numInformado !== 0)
+let media = soma / (contador-1)
+
+console.log(`A média aritmetica dos números informados é: ${media}`)

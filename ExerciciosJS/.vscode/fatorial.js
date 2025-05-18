@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+const num = Number(prompt('Digite um número: '))
 function fatorial(num){
     let fatorial = 1
     for(let i = 1; i <= num; i++){
@@ -6,5 +8,5 @@ function fatorial(num){
     return fatorial;
 }
 
-let resultado = fatorial(8);
+let resultado = fatorial(num);
 console.log(resultado)

@@ -5,7 +5,7 @@ const valorC = Number(prompt('Digite o terceiro valor: '))
 const isValid = (valorA < (valorB + valorC)) && (valorB < (valorA + valorC)) && (valorC < (valorA + valorB)) ? true : false
 
 if((isValid == true) && (valorA == valorB || valorA==valorC || valorB==valorC)){
-    if((isValid == true) && (valorA == valorB && valorB == valorC)){
+    if(valorA == valorB && valorB == valorC){
         console.log("Triângulo eqüilátero e isósceles")
 }else{
     console.log("Triângulo isósceles")
