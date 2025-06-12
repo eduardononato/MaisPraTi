@@ -7,8 +7,7 @@ function ehDataValida(dia, mes, ano){
     let day = Number(dia)
     let month = Number(mes)
     let year = Number(ano)
-    console.log('testando o git stash')
-     
+
     let isLeapYear = anoBissexto(year)
     let isMonthValid = isMonthAndDayValid(day, month)
 
