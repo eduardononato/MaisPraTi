@@ -9,23 +9,13 @@ function ehDataValida(dia, mes, ano){
     let year = Number(ano)
 
     let isLeapYear = anoBissexto(year)
-    let isMonthValid = isMonthAndDayValid(day, month)
-
-    if(isMonthValid && (!isLeapYear && month == 2 && day <= 28)){
-        return true 
-    }else if(isMonthValid && (isLeapYear && month == 2 && day <= 29)){
-        return true
-    }else if(isMonthValid && month !== 2){
-        return true
-    }else{
-        return false
-    }
+    return isMonthAndDayValid(day, month, isLeapYear)
 } 
 
 function anoBissexto(ano){  
     let finalYY = ano.toString().slice(-2);
     if (finalYY !== '00' && (ano % 4) == 0){
-        return true
+            return true
     }else if(finalYY == '00' && (ano % 400) == 0){
         return true
     }else{
@@ -34,7 +24,7 @@ function anoBissexto(ano){
 }
 
 
-function isMonthAndDayValid(dia, mes){
+function isMonthAndDayValid(dia, mes, eAnoBissexto){
     let isDayAndMonthValid = (dia > 0 && dia <= 31 && mes <= 12 && mes > 0) 
     let monthsWith30Days = [4, 6, 9, 11]
     let monthsWith31Days = [1, 3, 5, 7, 8, 10, 12]
@@ -42,7 +32,9 @@ function isMonthAndDayValid(dia, mes){
         return true
     }else if(isDayAndMonthValid && monthsWith31Days.includes(mes) && dia <= 31){
         return true
-    }else if(isDayAndMonthValid && mes == 2 && dia <= 29){
+    }else if(isDayAndMonthValid && mes == 2 && dia <= 29 && eAnoBissexto){
+        return true
+    }else if(isDayAndMonthValid && mes == 2 && dia <= 28 && !eAnoBissexto){
         return true
     }else{
         return false
