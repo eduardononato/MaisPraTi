@@ -1,0 +1,18 @@
+{
+    "nome":"Rafael",
+    "idade": 26,
+    "cidade": "SBC",
+    "gatos":
+        [
+            {
+                "nome": "timão",
+                "idade": 10
+            },
+            {
+                "nome": "maylon"
+            },
+            {
+                "nome": "jhonson"
+            }
+        ]
+}
