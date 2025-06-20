@@ -25,15 +25,34 @@
         {titulo:"Batman Forever", genero: "Heroi"}
     ]
 
-    let qntPorGenero = [
-        {genero: "Comedia", quantidade: 0},
-        {genero: "Aventura", quantidade: 0},
-        {genero: "De chorar", quantidade: 0},
-        {genero: "Historico", quantidade: 0},
-        {genero: "Guerra", quantidade: 0},
-        {genero: "Romance", quantidade: 0},
-        {genero: "Heroi", quantidade:0}
-    ]
-    for(let filme of filmes){  
-        if(filme.genero = )
-    }   
+    
+    // Listem a contagem de generos desses filmes
+    let contagemFilmes = {}
+    
+    filmes.forEach((filme) => {
+        if(contagemFilmes[filme.genero]){
+            contagemFilmes[filme.genero]++
+        }else{
+            contagemFilmes[filme.genero] = 1
+        }
+    })
+    console.table(contagemFilmes)
+
+    // let quantityMovieByGenero = [        
+    //     {genero: "Comedia", quantidade: 0},
+    //     {genero: "Aventura", quantidade: 0},
+    //     {genero: "De chorar", quantidade: 0},
+    //     {genero: "Historico", quantidade: 0},
+    //     {genero: "Guerra", quantidade: 0},
+    //     {genero: "Romance", quantidade: 0},
+    //     {genero: "Heroi", quantidade:0}
+    // ]
+
+    // for(let filme of filmes){ 
+    //     for(let quantity of quantityMovieByGenero){
+    //         if(quantity.genero == filme.genero){
+    //             quantity.quantidade ++
+    //         }
+    //     }
+    // }   
+    // console.log(quantityMovieByGenero)

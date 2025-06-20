@@ -27,13 +27,12 @@ let professor = {
 let notasByProfessor = []
 let soma = 0
 for (let aluno in professor.notas){ 
+
     for (let nota of professor.notas[aluno]){
         notasByProfessor += nota
         soma += nota
     }
 }
-
-
 
 let averageByProfessor = (soma / notasByProfessor.length)
 if(averageByProfessor >= 6){
