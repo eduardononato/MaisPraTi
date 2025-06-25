@@ -50,13 +50,48 @@
 // }
 // console.log(sum(10))
 
-function fibo(n){
-    if(n === 0){
-        return 0
-    }else if( n === 1 ){ 
-        return 1
-    }else{  
-        return fibo(n - 1) + fibo(n - 2)
+// function fibo(n){
+//     if(n === 0){
+//         return 0
+//     }else if( n === 1 ){ 
+//         return 1
+//     }else{  
+//         return fibo(n - 1) + fibo(n - 2)
+//     }
+// }
+// console.log(fibo(4))
+
+
+let categorias = [
+    {
+        id: 1,
+        nome: "Eletrônicos",
+        filhos: [
+            {id: 2, nome: "Celulares", filhos: []},
+            {id: 3, nome: "Computadores", filhos: [
+                {id: 4, nome: "Tablets", filhos: []},
+            ]}
+        ]
+    },
+    {
+        id: 5,
+        nome: "Louças",
+        filhos: []
     }
+]
+
+let objAux = {}
+function myObj(obj){
+    if(obj.nome == 'Eletrônicos'){
+        objAux = obj.filhos
+    }
+    objAux = obj.celulares
 }
-console.log(fibo(4))
+
+
+
+eletronicos
+    celulares
+    computadores
+        tablets
+loucas
