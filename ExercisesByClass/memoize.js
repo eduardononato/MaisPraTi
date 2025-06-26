@@ -1,7 +1,3 @@
-// Implemente function memoize(fn) que armazene em cache chamadas
-// anteriores de fn (por argumentos), retornando resultados instantâneos em
-// repetidas invocações.
-
 function memoize(fn) {
     const cache = new Map()
     return function(...args) {
