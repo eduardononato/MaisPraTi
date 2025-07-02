@@ -1,0 +1,11 @@
+img {
+    height: 40px;
+    width: 80px;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
