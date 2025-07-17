@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="toDoList.css"
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="toDoList.css">
+    <script src="toDoList.js" defer></script>
 </head>
 <body>
     <div id="container">
         <h1>Lista de Compra</h1>
+
         <form id="formAdicionar">
             <input type="text" id="inputItem" value="Digite aqui o item"/>
-            <button type="submit" id="btnAdicionar">Adicionar</button>
+            <button type="submit">Adicionar</button>
             <button type="reset" id="btnLimpar">Limpar</button>
             <textarea></textarea>
-            <ul id="listaItens">
-            </ul>
+            <ul id="listaItens"></ul>
         </form>
     </div>
 </body>
