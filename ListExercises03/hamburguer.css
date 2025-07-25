@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #a9dce3;
+    
+    padding: 10px;
+}
+
+a {
+    color: #7689de;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.iconMenu {
+    display: none;
+}
+
+#menuToggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        position: none;
+        left: 0;
+        display: none;
+        flex-direction: column;
+    }
+
+    #menuToggle:checked + .iconMenu + .menu {
+        display: flex;
+    }
+
+    .iconMenu {
+        display: block;
+    }
+
+}
+
